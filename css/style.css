@@ -1,0 +1,94 @@
+/*main colors 	hsl(180, 5%, 9%) black
+	hsl(240, 11%, 96%) white*/ 
+
+body {
+  font-family:'Inter', sans-serif;
+  margin: 0;
+}
+
+/*parent nav flexbox*/
+nav{
+  display: flex;
+  justify-content: space-between;
+
+  background-color:hsl(180, 5%, 9%);
+}
+
+/*nav links styles*/
+nav a{
+  display: block;
+
+  text-decoration: none;
+  text-align: center;
+
+  padding: 1rem;
+  width: min-content;
+
+  background-color:	hsl(180, 5%, 9%);
+  color:	hsl(240, 11%, 96%);
+}
+
+/* nav links hover*/
+nav a:hover {
+  background-color: hsl(180, 5%, 9%);
+  color:hsl(240, 11%, 96%);
+}
+
+/*nav links flexbox*/
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  list-style: none;
+  background-color: hsl(180, 5%, 9%);
+}
+
+/*image flexbox*/ 
+.navimg{
+ justify-content: flex-start;
+ align-items:center;
+
+ border-radius: 50%;
+ width:50px;
+ height:50px;
+
+ padding:1rem;
+}
+
+.arrow{
+  fill:white;
+  width:5px;
+  display:inline-block;
+  padding:0;
+  margin:0;
+  transition-property: 0;
+  transition-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.arrow:hover{
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+ 
+
+}
+
+a{
+  flex-direction:row;
+}
+.home{
+  display:inline-flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-right:0;
+  
+  
+}
+svg{
+  position: relative;
+}
